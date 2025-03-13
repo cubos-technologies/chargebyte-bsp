@@ -66,4 +66,3 @@ RUN mkdir -p ~/.bin && \
     echo 'export PATH="$HOME/.bin:$PATH"' >> ~/.bashrc && \
     curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo && \
     chmod a+rx ~/.bin/repo
-
