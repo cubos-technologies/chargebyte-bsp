@@ -16,5 +16,5 @@
         "--workdir=${containerWorkspaceFolder}"
     ],
 
-    "postCreateCommand": "./postCreate.sh"
+    "postCreateCommand": "sudo chmod +x ./postCreate.sh && ./postCreate.sh"
 }
