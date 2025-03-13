@@ -10,7 +10,7 @@
   <remote fetch="https://github.com/meta-qt5" name="qt5"/>
   <remote fetch="https://github.com/nymea" name="nymea"/>
   <remote fetch="https://github.com/EVerest" name="everest"/>
-  <remote fetch="https://github.com/cubostechnologies" name="cubos"/>
+  <remote fetch="https://github.com/cubos-technologies" name="cubos"/>
 
   <!-- project definitions -->
   <project remote="yocto"        revision="kirkstone"                                name="poky"                     path="source"/>
