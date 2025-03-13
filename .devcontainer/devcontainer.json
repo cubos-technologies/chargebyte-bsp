@@ -1,0 +1,20 @@
+{
+    "name": "Yocto",
+    //"image": "crops/poky:debian-11",
+    "build": {
+        // Use a Dockerfile to build a Yocto-compatible Linux environment
+        "dockerfile": "Dockerfile"
+    },
+
+    // Mount the build directory as a Docker Volume to persist build artifacts
+    // while still using a Yocto-compatible filesystem
+    "mounts": [
+        "source=${localWorkspaceFolderBasename}-build,target=${containerWorkspaceFolder}/build,type=volume"
+    ],
+
+    "runArgs": [
+        "--workdir=${containerWorkspaceFolder}"
+    ],
+
+    "postCreateCommand": "./postCreate.sh"
+}
